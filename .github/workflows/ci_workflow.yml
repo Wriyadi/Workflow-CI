@@ -45,6 +45,7 @@ jobs:
             echo "Tidak ada artefak baru untuk di-commit."
           else
             git commit -m "Auto-save model artifacts to GitHub Repo"
+            git pull origin main --rebase    # <--- TAMBAHKAN BARIS INI
             git push
           fi
 
